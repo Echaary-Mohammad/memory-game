@@ -1,0 +1,171 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: pink; }
+
+.opac {
+  opacity: .2; }
+
+.startGame {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(7, 34, 39, 0.9); }
+  .startGame span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 10px;
+    color: #072227;
+    padding: 10px 20px;
+    font-size: 35px;
+    cursor: pointer;
+    z-index: 8;
+    transition: 0.4s; }
+  .startGame:hover span {
+    color: #35858B; }
+
+.EndGame {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(7, 34, 39, 0.9);
+  opacity: .9;
+  z-index: 20; }
+  .EndGame .middle {
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 500px;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    .EndGame .middle .congrat {
+      font-size: 30px;
+      font-weight: 600;
+      border-radius: 10px;
+      color: #072227;
+      padding: 10px 20px;
+      cursor: pointer; }
+    .EndGame .middle .statistics {
+      margin: 20px auto;
+      width: fit-content;
+      padding: 14px 30px;
+      background-color: #35858B;
+      color: white;
+      font-size: 25px;
+      border-radius: 10px;
+      transition: .5s;
+      cursor: pointer; }
+
+.countless {
+  position: fixed;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, -70%);
+  font-size: 600px;
+  font-weight: bold;
+  opacity: .5;
+  color: #35858B;
+  z-index: 5; }
+
+.container {
+  width: 1000px;
+  margin: 0px auto;
+  padding: 10px 30px; }
+  .container header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #4FBDBA;
+    color: #151515;
+    padding: 5px 20px;
+    border-radius: 10px; }
+    .container header .user {
+      font-size: 24px;
+      font-weight: 500; }
+      .container header .user span {
+        color: #010A43;
+        font-weight: 600;
+        text-transform: capitalize; }
+    .container header .count {
+      display: flex;
+      font-size: 50px;
+      background-color: #151515;
+      font-weight: 600;
+      color: black;
+      padding: 0px 10px;
+      border: 6px solid #072227;
+      background-color: white;
+      border-radius: 3px;
+      min-width: 200px;
+      justify-content: center; }
+      .container header .count > p {
+        padding: 0;
+        margin: 0; }
+      .container header .count .colon {
+        margin-right: 4px;
+        margin-left: 4px; }
+    .container header .numberOfWrongs p {
+      font-size: 24px;
+      font-weight: 600; }
+      .container header .numberOfWrongs p span {
+        color: #f02525;
+        font-weight: 700;
+        font-size: 27px; }
+  .container > section {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; }
+    .container > section .img {
+      border: 3px solid #4FBDBA;
+      border-radius: 10px;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: white;
+      cursor: pointer;
+      flex-basis: calc(90% / 7);
+      margin-bottom: 1%; }
+      .container > section .img.no-clicking {
+        pointer-events: none; }
+      .container > section .img > img {
+        width: 90%;
+        height: 90%;
+        transition: .5s;
+        transform: rotateY(180deg);
+        backface-visibility: hidden;
+        z-index: 2; }
+        .container > section .img > img.show {
+          transform: rotateY(0deg); }
+      .container > section .img .backFace {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: .3s;
+        opacity: .8; }
+        .container > section .img .backFace:hover {
+          opacity: 1; }
+        .container > section .img .backFace img {
+          position: absolute;
+          top: 10%;
+          left: 10%;
+          width: 80%;
+          height: 80%;
+          transition: .6s;
+          backface-visibility: hidden; }
+          .container > section .img .backFace img.hide {
+            transform: rotateY(180deg); }
+
+/*# sourceMappingURL=memory.css.map */

@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>memory Game</title>
+    <link rel="stylesheet" href="memory.css">
+    <link rel="stylesheet" href="memory.css.map">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="startGame ">
+        <span>Start Game</span>
+    </div>
+    <div class="EndGame ">
+        <div class="middle">
+            <p class="congrat"> </p>
+        </div>
+    </div>
+    <p class="countless">5</p>
+    <div class="container">
+        <header>
+            <p class="user">Hello : <span class="userName"></span></p>
+            <div class="count">
+                <p class="minutes">00</p>
+                <p class="colon">:</p>
+                <p class="seconds">00</p>
+            </div>
+            <div class="numberOfWrongs">
+                <p>Wrong Tries : <span class="tries">0</span></p>
+            </div>
+        </header>
+        <section class="opac">
+            <div class="img">
+                <img src="images/angular-svgrepo-com.svg" alt="" class="one">
+                <div class="backFace">
+                    <img src="images\question-svgrepo-com.svg" alt="">
+                </div>
+            </div>
+            <div class="img ">
+                <img src="images/bootstrap-svgrepo-com.svg" alt="" class="two">
+                <div class="backFace">
+                    <img src="images\question-svgrepo-com.svg" alt="">
+                </div>
+            </div>
+            <div class="img">
+                <img src="images/css3-svgrepo-com.svg" alt="" class="three">
+                <div class="backFace">
+                    <img src="images\question-svgrepo-com.svg" alt="">
+                </div>
+            </div>
+            <div class="img">
+                <img src="images/html5-svgrepo-com.svg" alt="" class="four">
+                <div class="backFace">
+                    <img src="images\question-svgrepo-com.svg" alt="">
+                </div>
+            </div>
+            <div class="img">
+                <img src="images/adobe-xd-logo-svgrepo-com.svg" alt="" class="five">
+                <div class="backFace">
+                    <img src="images\question-svgrepo-com.svg" alt="">
+                </div>
+            </div>
+            <div class="img">
+                <img src="images/js-official-svgrepo-com.svg" alt="" class="six">
+                <div class="backFace">
+                    <img src="images\question-svgrepo-com.svg" alt="">
+                </div>
+            </div>
+            <div class="img">
+                <img src="images/php-svgrepo-com.svg" alt="" class="seven">
+                <div class="backFace">
+                    <img src="images\question-svgrepo-com.svg" alt="">
+                </div>
+            </div>
+            <div class="img">
+                <img src="images/python-svgrepo-com.svg" alt="" class="eight">
+                <div class="backFace">
+                    <img src="images\question-svgrepo-com.svg" alt="">
+                </div>
+            </div>
+            <div class="img">
+                <img src="images/react-svgrepo-com.svg" alt="" class="nine">
+                <div class="backFace">
+                    <img src="images\question-svgrepo-com.svg" alt="">
+                </div>
+            </div>
+            <div class="img">
+                <img src="images/sass-svgrepo-com.svg" alt="" class="ten">
+                <div class="backFace">
+                    <img src="images\question-svgrepo-com.svg" alt="">
+                </div>
+            </div>
+            <div class="img">
+                <img src="images/sql-database-generic-svgrepo-com.svg" alt="" class="eleven">
+                <div class="backFace">
+                    <img src="images\question-svgrepo-com.svg" alt="">
+                </div>
+            </div>
+            <div class="img">
+                <img src="images/vue-svgrepo-com.svg" alt="" class="twelve">
+                <div class="backFace">
+                    <img src="images\question-svgrepo-com.svg" alt="">
+                </div>
+            </div>
+            <div class="img">
+                <img src="images/angular-svgrepo-com.svg" alt="" class="one">
+                <div class="backFace">
+                    <img src="images\question-svgrepo-com.svg" alt="">
+                </div>
+            </div>
+            <div class="img">
+                <img src="images/bootstrap-svgrepo-com.svg" alt="" class="two">
+                <div class="backFace">
+                    <img src="images\question-svgrepo-com.svg" alt="">
+                </div>
+            </div>
+            <div class="img">
+                <img src="images/css3-svgrepo-com.svg" alt="" class="three">
+                <div class="backFace">
+                    <img src="images\question-svgrepo-com.svg" alt="">
+                </div>
+            </div>
+            <div class="img">
+                <img src="images/html5-svgrepo-com.svg" alt="" class="four">
+                <div class="backFace">
+                    <img src="images\question-svgrepo-com.svg" alt="">
+                </div>
+            </div>
+            <div class="img">
+                <img src="images/adobe-xd-logo-svgrepo-com.svg" alt="" class="five">
+                <div class="backFace">
+                    <img src="images\question-svgrepo-com.svg" alt="">
+                </div>
+            </div>
+            <div class="img">
+                <img src="images/js-official-svgrepo-com.svg" alt="" class="six">
+                <div class="backFace">
+                    <img src="images\question-svgrepo-com.svg" alt="">
+                </div>
+            </div>
+            <div class="img">
+                <img src="images/php-svgrepo-com.svg" alt="" class="seven">
+                <div class="backFace">
+                    <img src="images\question-svgrepo-com.svg" alt="">
+                </div>
+            </div>
+            <div class="img">
+                <img src="images/python-svgrepo-com.svg" alt="" class="eight">
+                <div class="backFace">
+                    <img src="images\question-svgrepo-com.svg" alt="">
+                </div>
+            </div>
+            <div class="img">
+                <img src="images/react-svgrepo-com.svg" alt="" class="nine">
+                <div class="backFace">
+                    <img src="images\question-svgrepo-com.svg" alt="">
+                </div>
+            </div>
+            <div class="img">
+                <img src="images/sass-svgrepo-com.svg" alt="" class="ten">
+                <div class="backFace">
+                    <img src="images\question-svgrepo-com.svg" alt="">
+                </div>
+            </div>
+            <div class="img">
+                <img src="images/sql-database-generic-svgrepo-com.svg" alt="" class="eleven">
+                <div class="backFace">
+                    <img src="images\question-svgrepo-com.svg" alt="">
+                </div>
+            </div>
+            <div class="img">
+                <img src="images/vue-svgrepo-com.svg" alt="" class="twelve">
+                <div class="backFace">
+                    <img src="images\question-svgrepo-com.svg" alt="">
+                </div>
+            </div>
+
+            <div class="img">
+                <img src="images/apple-black-logo-svgrepo-com.svg" alt="" class="thirteen">
+                <div class="backFace">
+                    <img src="images\question-svgrepo-com.svg" alt="">
+                </div>
+            </div>
+            <div class="img">
+                <img src="images/apple-black-logo-svgrepo-com.svg" alt="" class="thirteen">
+                <div class="backFace">
+                    <img src="images\question-svgrepo-com.svg" alt="">
+                </div>
+            </div>
+
+            <div class="img">
+                <img src="images/c-logo-svgrepo-com.svg" alt="" class="fourteen">
+                <div class="backFace">
+                    <img src="images\question-svgrepo-com.svg" alt="">
+                </div>
+            </div>
+            <div class="img">
+                <img src="images/c-logo-svgrepo-com.svg" alt="" class="fourteen">
+                <div class="backFace">
+                    <img src="images\question-svgrepo-com.svg" alt="">
+                </div>
+            </div>
+
+            <div class="img">
+                <img src="images/facebook-messenger-3-logo-svgrepo-com.svg" alt="" class="fifteen">
+                <div class="backFace">
+                    <img src="images\question-svgrepo-com.svg" alt="">
+                </div>
+            </div>
+            <div class="img">
+                <img src="images/facebook-messenger-3-logo-svgrepo-com.svg" alt="" class="fifteen">
+                <div class="backFace">
+                    <img src="images\question-svgrepo-com.svg" alt="">
+                </div>
+            </div>
+
+            <div class="img">
+                <img src="images/github-svgrepo-com.svg" alt="" class="sixteen">
+                <div class="backFace">
+                    <img src="images\question-svgrepo-com.svg" alt="">
+                </div>
+            </div>
+            <div class="img">
+                <img src="images/github-svgrepo-com.svg" alt="" class="sixteen">
+                <div class="backFace">
+                    <img src="images\question-svgrepo-com.svg" alt="">
+                </div>
+            </div>
+
+            <div class="img">
+                <img src="images/gmail-svgrepo-com.svg" alt="" class="seventeen">
+                <div class="backFace">
+                    <img src="images\question-svgrepo-com.svg" alt="">
+                </div>
+            </div>
+            <div class="img">
+                <img src="images/gmail-svgrepo-com.svg" alt="" class="seventeen">
+                <div class="backFace">
+                    <img src="images\question-svgrepo-com.svg" alt="">
+                </div>
+            </div>
+
+            <div class="img">
+                <img src="images/photoshop-cc-logo-svgrepo-com.svg" alt="" class="eighteen">
+                <div class="backFace">
+                    <img src="images\question-svgrepo-com.svg" alt="">
+                </div>
+            </div>
+            <div class="img">
+                <img src="images/photoshop-cc-logo-svgrepo-com.svg" alt="" class="eighteen">
+                <div class="backFace">
+                    <img src="images\question-svgrepo-com.svg" alt="">
+                </div>
+            </div>
+
+            <div class="img">
+                <img src="images/whatsapp-icon-logo-svgrepo-com.svg" alt="" class="nineteen">
+                <div class="backFace">
+                    <img src="images\question-svgrepo-com.svg" alt="">
+                </div>
+            </div>
+            <div class="img">
+                <img src="images/whatsapp-icon-logo-svgrepo-com.svg" alt="" class="nineteen">
+                <div class="backFace">
+                    <img src="images\question-svgrepo-com.svg" alt="">
+                </div>
+            </div>
+
+            <div class="img">
+                <img src="images/youtube-svgrepo-com.svg" alt="" class="twenty">
+                <div class="backFace">
+                    <img src="images\question-svgrepo-com.svg" alt="">
+                </div>
+            </div>
+            <div class="img">
+                <img src="images/youtube-svgrepo-com.svg" alt="" class="twenty">
+                <div class="backFace">
+                    <img src="images\question-svgrepo-com.svg" alt="">
+                </div>
+            </div>
+            <div class="img">
+                <img src="images/snapchat-snap-chat-svgrepo-com.svg" alt="" class="twentyOne">
+                <div class="backFace">
+                    <img src="images\question-svgrepo-com.svg" alt="">
+                </div>
+            </div>
+            <div class="img">
+                <img src="images/snapchat-snap-chat-svgrepo-com.svg" alt="" class="twentyOne">
+                <div class="backFace">
+                    <img src="images\question-svgrepo-com.svg" alt="">
+                </div>
+            </div>
+            <!-- <div class="img">
+                <img src="images/twitter-svgrepo-com.svg" alt="" class="twentyTwo">
+                <div class="backFace">
+                    <img src="images\question-svgrepo-com.svg" alt="">
+                </div>
+            </div>
+            <div class="img">
+                <img src="images/twitter-svgrepo-com.svg" alt="" class="twentyTwo">
+                <div class="backFace">
+                    <img src="images\question-svgrepo-com.svg" alt="">
+                </div>
+            </div> -->
+
+        </section>
+    </div>
+    <!-- // audios -->
+    <audio src="./audios/Congratulations.mp3" class="congratilationsSound" preload="auto" loop></audio>
+    <audio src="./audios/error.mp3" class="errorSound" preload="auto"></audio>
+    <audio src="./audios/Game of Thrones - Main Theme __ Jacob_s Piano(MP3_320K).mp3" class="mainMusic" preload="auto" loop> </audio>
+    <audio src="./audios/seccuss.mp3" class="success" preload="auto"></audio>
+    <script src="memory.js "></script>
+</body>
+
+</html>

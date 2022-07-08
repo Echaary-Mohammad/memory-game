@@ -1,0 +1,212 @@
+* {
+    box-sizing: border-box;
+}
+
+$background: #4FBDBA;
+$mid-background:#35858B;
+$dark-background:#072227;
+$color:#151515;
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: pink;
+}
+
+.opac {
+    opacity: .2;
+}
+
+.startGame {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(7, 34, 39, .9);
+    span {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        border-radius: 10px;
+        color: $dark-background;
+        padding: 10px 20px;
+        font-size: 35px;
+        cursor: pointer;
+        z-index: 8;
+        transition: .4s
+    }
+    &:hover span {
+        color: $mid-background
+    }
+}
+
+.EndGame {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(7, 34, 39, .9);
+    opacity: .9;
+    z-index: 20;
+    .middle {
+        background-color: rgba(255, 255, 255, .8);
+        width: 500px;
+        padding: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        .congrat {
+            font-size: 30px;
+            font-weight: 600;
+            border-radius: 10px;
+            color: $dark-background;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        .statistics {
+            margin: 20px auto;
+            width: fit-content;
+            padding: 14px 30px;
+            background-color: $mid-background;
+            color: white;
+            font-size: 25px;
+            border-radius: 10px;
+            transition: .5s;
+            cursor: pointer;
+        }
+    }
+}
+
+.countless {
+    position: fixed;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    font-size: 600px;
+    font-weight: bold;
+    opacity: .5;
+    color: $mid-background;
+    z-index: 5;
+}
+
+.container {
+    width: 1000px;
+    margin: 0px auto;
+    padding: 10px 30px;
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: $background;
+        color: $color;
+        padding: 5px 20px;
+        border-radius: 10px;
+        .user {
+            font-size: 24px;
+            font-weight: 500;
+            span {
+                color: #010A43;
+                font-weight: 600;
+                text-transform: capitalize;
+            }
+        }
+        ;
+        .count {
+            display: flex;
+            font-size: 50px;
+            background-color: $color;
+            font-weight: 600;
+            color: black;
+            padding: 0px 10px;
+            border: 6px solid $dark-background;
+            background-color: white;
+            border-radius: 3px;
+            min-width: 200px;
+            justify-content: center;
+            >p {
+                padding: 0;
+                margin: 0;
+            }
+            .minutes {}
+            ;
+            .colon {
+                margin-right: 4px;
+                margin-left: 4px;
+            }
+            ;
+            .seconds {}
+            ;
+        }
+        .numberOfWrongs {
+            p {
+                font-size: 24px;
+                font-weight: 600;
+                span {
+                    color: rgb(240, 37, 37);
+                    font-weight: 700;
+                    font-size: 27px
+                }
+                ;
+            }
+        }
+    }
+    >section {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        .img {
+            border: 3px solid $background;
+            border-radius: 10px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            cursor: pointer;
+            flex-basis: calc(90% / 7);
+            margin-bottom: 1%;
+            // margin-top: 3%;
+            &.no-clicking {
+                pointer-events: none;
+            }
+            >img {
+                width: 90%;
+                height: 90%;
+                transition: .5s;
+                transform: rotateY(180deg);
+                backface-visibility: hidden;
+                z-index: 2;
+                &.show {
+                    transform: rotateY(0deg);
+                }
+            }
+            .backFace {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                transition: .3s;
+                opacity: .8;
+                &:hover {
+                    opacity: 1;
+                }
+                img {
+                    position: absolute;
+                    top: 10%;
+                    left: 10%;
+                    width: 80%;
+                    height: 80%;
+                    transition: .6s;
+                    backface-visibility: hidden;
+                    &.hide {
+                        transform: rotateY(180deg);
+                    }
+                }
+            }
+        }
+    }
+}
